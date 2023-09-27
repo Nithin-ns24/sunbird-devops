@@ -9574,9 +9574,9 @@ kong_apis:
     config.required: false
     config.enabled: false
 
-- name: courseEnrolmentsummary
-  uris: "/learner/v1/course/enrolmentsummary"
-  upstream_url: "{{ custom_report_service_url }}/learner/v1/course/enrolmentsummary"
+- name: progressReportCustomcsv
+  uris: "/course/v1/progress/reports/csv"
+  upstream_url: "{{ custom_report_service_url }}/course/v1/progress/reports/csv"
   strip_uri: true
   plugins:
   - name: jwt
