@@ -8,7 +8,7 @@ monitoring_stack:
   - logger
   - blackbox-exporter
   - additional-scrape-configs
-  - alertrules
+#  - alertrules
   - kafka-topic-exporter
   - prometheus-redis-exporter
   - processing-kafka-exporter
